@@ -1,3 +1,5 @@
+var path_to_files = "https://raw.githubusercontent.com/HSRugg/DSI-SF-4-HSRugg/master/data/census_data/"
+
 var width = 1000;
 var height = 500;
 // D3 Projection
@@ -26,7 +28,7 @@ var div = d3.select("body")
     		.attr("id", "tooltip")               
     		.style("opacity", 0);
 
-d3.csv("/d3_testing/US_State_pop_00-09.csv", function(data) {
+d3.csv(path_to_files+"US_State_pop_00-09.csv", function(data) {
     
     var max = d3.max(data, function(d) { return +d.incress_2001;} );
     console.log(max);
