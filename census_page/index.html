@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="/d3_testing/bars_for_state.js"></script>
-    <script src="d3.legend.js"></script>
+    <script>
+	    var path_to_data = "https://raw.githubusercontent.com/HSRugg/DSI-SF-4-HSRugg/master/data/census_data/"
+	    var path_to_js = "https://raw.githubusercontent.com/HSRugg/DSI-SF-4-HSRugg/master/census_page/"
+    </script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src=path_to_js+"d3.legend.js"></script>
 
 <style>
     body {
@@ -186,20 +189,20 @@ window.onclick = function(e) {
 <h3>Welcome to Census Industry Data Explore</h3>
     <h3> Data from <a href="https://www.census.gov/data/developers/data-sets/qwi.html#industry">US Census Bureau</a></h3>
 <h2 id = "my_p">Click a state or to see more</h2>
-<script src="/d3_testing/home_page_map.js"></script>
+<script src=path_to_js+"home_page_map.js"></script>
 
     
     <div id="map"></div>
 </center>
-    <script src='/d3_testing/ed_line_by_state.js'></script>
+    <script src=path_to_js+'ed_line_by_state.js'></script>
     <div class="chart">
     <svg id="line_plot_one" width="1000" height="700"></svg>
     </div>
         <div id="pie_container">
         <div id="mypie1" ></div>
         </div>
-        <script src="genderPie.js"></script>
-        <script src="change_title.js"></script>
+        <script src=path_to_js+"genderPie.js"></script>
+        <script src=path_to_js+"change_title.js"></script>
     
 
 <!--        <script src="arc_test.js"></script>-->
