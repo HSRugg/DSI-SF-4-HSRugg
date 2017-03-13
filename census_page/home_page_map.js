@@ -1,4 +1,4 @@
-var path_to_files = "https://raw.githubusercontent.com/HSRugg/DSI-SF-4-HSRugg/master/data/census_data/"
+var path_to_files = "https://cdn.rawgit.com/HSRugg/DSI-SF-4-HSRugg/master/data/census_data/"
 
 var width = 1000;
 var height = 500;
@@ -37,7 +37,7 @@ d3.csv(path_to_files+"US_State_pop_00-09.csv", function(data) {
     // Load in my states data
     
 state_json = "https://gist.githubusercontent.com/michellechandra/0b2ce4923dc9b5809922/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json"
-d3.csv("/d3_testing/US_State_pop_00-09.csv", function(data) {
+d3.csv(path_to_files+"US_State_pop_00-09.csv", function(data) {
 // Load GeoJSON data and merge with states data
 d3.json(state_json, function(json) {
 // Loop through each state data value in the .csv file
